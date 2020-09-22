@@ -16,6 +16,7 @@
 		96956A37251A3BAB003F59BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96956A36251A3BAB003F59BD /* Assets.xcassets */; };
 		96956A42251A3BAB003F59BD /* Pong_GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96956A41251A3BAB003F59BD /* Pong_GameTests.swift */; };
 		96956A4D251A3BAB003F59BD /* Pong_GameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96956A4C251A3BAB003F59BD /* Pong_GameUITests.swift */; };
+		96956A61251A4D17003F59BD /* LLPIXEL3.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96956A60251A4D17003F59BD /* LLPIXEL3.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		96956A48251A3BAB003F59BD /* Pong-GameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pong-GameUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96956A4C251A3BAB003F59BD /* Pong_GameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pong_GameUITests.swift; sourceTree = "<group>"; };
 		96956A4E251A3BAB003F59BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96956A60251A4D17003F59BD /* LLPIXEL3.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LLPIXEL3.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		96956A28251A3BAA003F59BD /* Pong-Game */ = {
 			isa = PBXGroup;
 			children = (
+				96956A60251A4D17003F59BD /* LLPIXEL3.ttf */,
 				96956A29251A3BAA003F59BD /* AppDelegate.swift */,
 				96956A2B251A3BAA003F59BD /* GameScene.sks */,
 				96956A2D251A3BAA003F59BD /* Actions.sks */,
@@ -235,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96956A35251A3BAA003F59BD /* Main.storyboard in Resources */,
+				96956A61251A4D17003F59BD /* LLPIXEL3.ttf in Resources */,
 				96956A2C251A3BAA003F59BD /* GameScene.sks in Resources */,
 				96956A37251A3BAB003F59BD /* Assets.xcassets in Resources */,
 				96956A2E251A3BAA003F59BD /* Actions.sks in Resources */,
