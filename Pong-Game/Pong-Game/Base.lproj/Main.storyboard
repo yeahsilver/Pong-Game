@@ -7,6 +7,11 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="LLPIXEL3.ttf">
+            <string>LLPixel</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Main View Controller-->
         <scene sceneID="XmK-67-IT8">
@@ -16,47 +21,78 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndg-NH-eMJ">
-                                <rect key="frame" x="176" y="331" width="63" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="2 Players"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndg-NH-eMJ">
+                                <rect key="frame" x="90" y="197" width="234" height="37"/>
+                                <fontDescription key="fontDescription" name="LLPixel" family="LLPixel" pointSize="20"/>
+                                <state key="normal" title="2 Players">
+                                    <color key="titleColor" systemColor="systemPinkColor"/>
+                                </state>
                                 <connections>
                                     <action selector="Player2:" destination="nlN-tg-hmb" eventType="touchUpInside" id="JVf-cM-zNQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fIq-mI-hWt">
-                                <rect key="frame" x="191" y="413" width="33" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Easy"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fIq-mI-hWt">
+                                <rect key="frame" x="90" y="270" width="234" height="37"/>
+                                <fontDescription key="fontDescription" name="LLPixel" family="LLPixel" pointSize="20"/>
+                                <state key="normal" title="Easy">
+                                    <color key="titleColor" systemColor="systemYellowColor"/>
+                                </state>
                                 <connections>
                                     <action selector="Easy:" destination="nlN-tg-hmb" eventType="touchUpInside" id="krO-7t-UVc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QEz-cY-ezV">
-                                <rect key="frame" x="190" y="574" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Hard"/>
-                                <connections>
-                                    <action selector="Hard:" destination="nlN-tg-hmb" eventType="touchUpInside" id="6Ww-Cp-cDE"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXJ-X4-kpO">
-                                <rect key="frame" x="182" y="485" width="50" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Normal"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXJ-X4-kpO">
+                                <rect key="frame" x="90" y="340" width="234" height="37"/>
+                                <fontDescription key="fontDescription" name="LLPixel" family="LLPixel" pointSize="20"/>
+                                <state key="normal" title="Normal">
+                                    <color key="titleColor" systemColor="systemGreenColor"/>
+                                </state>
                                 <connections>
                                     <action selector="Normal:" destination="nlN-tg-hmb" eventType="touchUpInside" id="Ddh-a2-O7g"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PONG GAME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDw-Vc-pSe">
+                                <rect key="frame" x="35" y="74" width="344" height="48.5"/>
+                                <fontDescription key="fontDescription" name="LLPixel" family="LLPixel" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QEz-cY-ezV">
+                                <rect key="frame" x="90" y="417" width="234" height="37"/>
+                                <fontDescription key="fontDescription" name="LLPixel" family="LLPixel" pointSize="20"/>
+                                <state key="normal" title="Hard">
+                                    <color key="titleColor" systemColor="systemBlueColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="Hard:" destination="nlN-tg-hmb" eventType="touchUpInside" id="6Ww-Cp-cDE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="R2M-KW-t8q"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="R2M-KW-t8q" firstAttribute="trailing" secondItem="QEz-cY-ezV" secondAttribute="trailing" constant="90" id="0ac-LJ-EAR"/>
+                            <constraint firstItem="fIq-mI-hWt" firstAttribute="top" secondItem="ndg-NH-eMJ" secondAttribute="bottom" constant="36" id="1mA-2P-Vq9"/>
+                            <constraint firstItem="R2M-KW-t8q" firstAttribute="trailing" secondItem="ndg-NH-eMJ" secondAttribute="trailing" constant="90" id="7CT-MU-jBZ"/>
+                            <constraint firstItem="fIq-mI-hWt" firstAttribute="leading" secondItem="R2M-KW-t8q" secondAttribute="leading" constant="90" id="7l7-bK-Wgc"/>
+                            <constraint firstItem="R2M-KW-t8q" firstAttribute="trailing" secondItem="eXJ-X4-kpO" secondAttribute="trailing" constant="90" id="AeQ-Ue-dgi"/>
+                            <constraint firstItem="sDw-Vc-pSe" firstAttribute="top" secondItem="R2M-KW-t8q" secondAttribute="top" constant="30" id="ELe-vt-l8a"/>
+                            <constraint firstItem="QEz-cY-ezV" firstAttribute="leading" secondItem="R2M-KW-t8q" secondAttribute="leading" constant="90" id="JS1-Xu-gPx"/>
+                            <constraint firstItem="eXJ-X4-kpO" firstAttribute="leading" secondItem="R2M-KW-t8q" secondAttribute="leading" constant="90" id="Pa6-0v-0ga"/>
+                            <constraint firstItem="eXJ-X4-kpO" firstAttribute="top" secondItem="fIq-mI-hWt" secondAttribute="bottom" constant="33" id="TwF-nd-YIm"/>
+                            <constraint firstItem="R2M-KW-t8q" firstAttribute="trailing" secondItem="fIq-mI-hWt" secondAttribute="trailing" constant="90" id="U4J-2V-PjK"/>
+                            <constraint firstItem="QEz-cY-ezV" firstAttribute="top" secondItem="eXJ-X4-kpO" secondAttribute="bottom" constant="40" id="VOn-tb-ovS"/>
+                            <constraint firstItem="ndg-NH-eMJ" firstAttribute="top" secondItem="sDw-Vc-pSe" secondAttribute="bottom" constant="74.5" id="aaT-nt-GNd"/>
+                            <constraint firstItem="ndg-NH-eMJ" firstAttribute="leading" secondItem="R2M-KW-t8q" secondAttribute="leading" constant="90" id="f7B-eA-29k"/>
+                            <constraint firstItem="R2M-KW-t8q" firstAttribute="trailing" secondItem="sDw-Vc-pSe" secondAttribute="trailing" constant="35" id="wBl-PQ-Zoc"/>
+                            <constraint firstItem="sDw-Vc-pSe" firstAttribute="leading" secondItem="R2M-KW-t8q" secondAttribute="leading" constant="35" id="y33-mR-vQd"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Lhi-ex-RAr"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2P3-a3-Uqx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1041" y="87"/>
+            <point key="canvasLocation" x="-1042.0289855072465" y="86.383928571428569"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
@@ -90,8 +126,23 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
