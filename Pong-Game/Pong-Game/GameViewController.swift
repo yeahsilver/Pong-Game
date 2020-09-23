@@ -9,7 +9,7 @@ import UIKit
 import SpriteKit
 import GameplayKit
 
-var currentGameType = gameType.normal
+var currentGameType: gameType = .normal
 
 class GameViewController: UIViewController {
     

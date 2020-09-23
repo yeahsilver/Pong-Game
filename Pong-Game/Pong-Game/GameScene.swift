@@ -20,6 +20,7 @@ class GameScene: SKScene {
     var score = [Int]()
     
     override func didMove(to view: SKView) {
+    
         topLabel = self.childNode(withName: "topLabel") as! SKLabelNode
         bottonLabel = self.childNode(withName: "bottomLabel") as! SKLabelNode
         
@@ -103,13 +104,13 @@ class GameScene: SKScene {
         
         switch currentGameType{
         case .easy:
-            enemy.run(SKAction.moveTo(x: ball.position.x, duration: 1.3))
+            enemy.run(SKAction.moveTo(x: ball.position.x, duration: 2.0))
             break
         case .normal:
-            enemy.run(SKAction.moveTo(x: ball.position.x, duration: 1.0))
+            enemy.run(SKAction.moveTo(x: ball.position.x, duration: 1.5))
             break
         case .hard:
-            enemy.run(SKAction.moveTo(x: ball.position.x, duration: 0.7))
+            enemy.run(SKAction.moveTo(x: ball.position.x, duration: 1.0))
             break
         case .player2:
             

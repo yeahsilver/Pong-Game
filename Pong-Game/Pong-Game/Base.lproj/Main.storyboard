@@ -51,12 +51,6 @@
                                     <action selector="Normal:" destination="nlN-tg-hmb" eventType="touchUpInside" id="Ddh-a2-O7g"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PONG GAME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDw-Vc-pSe">
-                                <rect key="frame" x="35" y="74" width="344" height="48.5"/>
-                                <fontDescription key="fontDescription" name="LLPixel" family="LLPixel" pointSize="40"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QEz-cY-ezV">
                                 <rect key="frame" x="90" y="417" width="234" height="37"/>
                                 <fontDescription key="fontDescription" name="LLPixel" family="LLPixel" pointSize="20"/>
@@ -67,6 +61,12 @@
                                     <action selector="Hard:" destination="nlN-tg-hmb" eventType="touchUpInside" id="6Ww-Cp-cDE"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PONG GAME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDw-Vc-pSe">
+                                <rect key="frame" x="35" y="74" width="344" height="48.5"/>
+                                <fontDescription key="fontDescription" name="LLPixel" family="LLPixel" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="R2M-KW-t8q"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
