@@ -19,24 +19,31 @@ class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func Player2(_ sender: Any) {
-        moveToGame(game: .player2)
+        alertStart(type: .player2)
     }
     
     @IBAction func Easy(_ sender: Any) {
-        moveToGame(game: .easy)
+        alertStart(type: .easy)
     }
     
     @IBAction func Normal(_ sender: Any) {
-        moveToGame(game: .normal)
+        alertStart(type: .normal)
     }
     
     @IBAction func Hard(_ sender: Any) {
-        moveToGame(game: .hard)
+        alertStart(type: .hard)
+    }
+    
+    func alertStart(type: gameType){
+        let alert = UIAlertController(title: "알림", message: "게임을 시작하시겠습니까?", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "아니오", style: .destructive))
+        alert.addAction(UIAlertAction(title: "예", style: .default){
+            (action) in self.moveToGame(game: type)
+        })
+        present(alert, animated: false, completion: nil)
     }
     
     func moveToGame(game: gameType){
