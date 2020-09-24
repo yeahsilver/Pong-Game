@@ -113,7 +113,7 @@
 
 2. #### .applyImpulse()
 
-   > 움직임을 이용하기 위해 사용
+   > 움직임을 나타내기 위해 사용
 
    ```swift
    ball.physicsBody?.applyImpulse(CGVector(dx: 10, dy: 10))
