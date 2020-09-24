@@ -43,7 +43,7 @@ class GameScene: SKScene {
     }
 
     func startGame(){
-        score = [0,0]
+        score = [0,-1]
         topLabel.text = "\(score[1])"
         bottonLabel.text = "\(score[0])"
         
