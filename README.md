@@ -10,7 +10,6 @@
 
 ## 2️⃣ 2 Player 모드
 
-
 <img width="200" src="image/2player.gif">
 
 
